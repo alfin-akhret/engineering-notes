@@ -5,9 +5,13 @@
 **1. Initial approache: Brute Force**
 
 Algorithmn: Nested loop, check evey pair
+
 Time complexity: o(n^2)
+
 Space complexity: o(1)
+
 Pros: simple, always correct
+
 Cons: slow for large arrays
 
 Implementation (golang):
