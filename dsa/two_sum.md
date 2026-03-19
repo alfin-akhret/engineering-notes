@@ -1,8 +1,12 @@
-## Two Sum
+# Two Sum
 
 **Problem url**: https://leetcode.com/problems/two-sum/
 
-**1. Initial approache: Brute Force**
+	•	Category: Array / Hash Map / Two-Pointer / Pair Sum
+	•	Pattern: “Find a pair of elements that satisfy a condition”
+	•	Constraint: Only one solution exists, unsorted array
+
+### 1. Initial approache: Brute Force
 
 Algorithmn: Nested loop, check evey pair
 
@@ -31,7 +35,11 @@ func twoSum(nums []int, target int) []int {
 ```
 ---
 
-**1. Optimized Approach: One-Pass hash map**
+**Pattern Learned**: 
+Nested loop / all combinations
+
+
+### 1. Optimized Approach: using hash map
 
 Algorithmn:
 - traverse array once
@@ -64,3 +72,17 @@ func twoSum(nums []int, target int) []int {
     return nil
 }
 ```
+
+**Pattern Learned**:
+	•	Hash Map Lookup (existence & index retrieval)
+	•	Complement pattern
+	•	One-pass / early exit optimization
+	•	Trade-off: memory for speed
+
+###  Key Concepts / DSA Patterns
+1.	Brute Force / Nested Loop → Check all pairs
+2.	Hash Map (Dictionary) → Store seen elements + index for O(1) lookup
+3.	Complement Concept → target - current
+4.	Early Exit / One-Pass → Stop traversal immediately after finding answer
+5.	Space vs Time Trade-Off → O(n) space for O(n) time
+6.	Edge Cases → duplicates, negative numbers, empty array
