@@ -41,8 +41,11 @@ Algorithmn:
 - else -> add current element to map
 
 Time complexity: o(n)
+
 Space complexity: o(n)
+
 Pros: faster than brute force, only using 1 loop
+
 Cons: slightly complex code
 
 Implementation example using (golang):
