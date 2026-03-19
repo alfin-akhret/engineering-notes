@@ -55,7 +55,7 @@ Space complexity: o(n)
 
 Pros: faster than brute force, only using 1 loop
 
-Cons: slightly complex code
+Cons: need more space -> o(n), (space for speed tradeoff)
 
 Implementation example using (golang):
 ```
@@ -74,10 +74,10 @@ func twoSum(nums []int, target int) []int {
 ```
 
 **Pattern Learned**:
-	•	Hash Map Lookup (existence & index retrieval)
-	•	Complement pattern
-	•	One-pass / early exit optimization
-	•	Trade-off: memory for speed
+- Hash Map Lookup (existence & index retrieval)
+- Complement pattern
+- One-pass / early exit optimization
+- Trade-off: memory for speed
 
 ###  Key Concepts / DSA Patterns
 1.	Brute Force / Nested Loop → Check all pairs
