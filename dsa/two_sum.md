@@ -3,6 +3,7 @@
 **Problem url**: https://leetcode.com/problems/two-sum/
 
 **1. Initial approache: Brute Force**
+
 Algorithmn: Nested loop, check evey pair
 Time complexity: o(n^2)
 Space complexity: o(1)
@@ -27,6 +28,7 @@ func twoSum(nums []int, target int) []int {
 ---
 
 **1. Optimized Approach: One-Pass hash map**
+
 Algorithmn:
 - traverse array once
 - for each element, calculate complement = target - element
@@ -36,7 +38,8 @@ Algorithmn:
 
 Time complexity: o(n)
 Space complexity: o(n)
-Pros: faster than brute force
+Pros: faster than brute force, only using 1 loop
+Cons: slightly complex code
 
 Implementation example using (golang):
 ```
