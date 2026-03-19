@@ -39,7 +39,7 @@ func twoSum(nums []int, target int) []int {
 Nested loop / all combinations
 
 
-### 1. Optimized Approach: using hash map
+### 1. Optimized Approach: one pass hash map
 
 Algorithmn:
 - traverse array once
