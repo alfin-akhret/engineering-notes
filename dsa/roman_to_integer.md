@@ -123,13 +123,13 @@ func romanToInt(s string) int {
 
 ## Conclusion
 **Key Data Structures:**
-	•	map[byte]int → fast lookup for Roman symbols
-	•	Use byte for ASCII (Roman numerals), rune only for Unicode
+- map[byte]int → fast lookup for Roman symbols
+- Use byte for ASCII (Roman numerals), rune only for Unicode
 
 **Core Algorithm (Pattern-Based):**
-	1.	Iterate string left → right
-	2.	If current < next → subtract current
-	3.	Else → add current
+1. Iterate string left → right
+2. If current < next → subtract current
+3. Else → add current
 
 **Exmaple:**
 ```
@@ -141,12 +141,12 @@ if roman[s[i]] < roman[s[i+1]] {
 ```
 
 **Complexity:**
-	•	Time: O(n)
-	•	Space: O(1)
+- Time: O(n)
+- Space: O(1)
 
 **Lessons Learned:**
-	•	Avoid unnecessary string concatenation / extra state
-	•	Compare adjacent characters to detect subtraction → simpler & clean
-	•	Pattern recognition > hardcoding all cases
-	•	Guard loop for out-of-bounds (i < len(s)-1)
-    •	Elegant solution = mathematical transformation (+/-) instead of multiple conditional cases
+- Avoid unnecessary string concatenation / extra state
+- Compare adjacent characters to detect subtraction → simpler & clean
+- Pattern recognition > hardcoding all cases
+- Guard loop for out-of-bounds (i < len(s)-1)
+- Elegant solution = mathematical transformation (+/-) instead of multiple conditional cases
