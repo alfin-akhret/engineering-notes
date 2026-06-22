@@ -29,10 +29,10 @@ order.created
     -> jika ya, jangan diproses, ACK
     -> jika tidak, proses, simpan event di DB, ACK
 ```
-Dengan teknik ini, sekalipun ACK tidak pernah diterima oleh broker, kali berikutnya message di-retry maka consumer akan langsung return dan ACK karena message sudah pernah diproses dan disimpan di DB.
+Dengan teknik ini, sekalipun ACK tidak pernah diterima oleh broker, kali berikutnya message di-retry maka consumer akan langsung return dan ACK karena message sudah pernah diproses dan disimpan di DB. Tenik ini juga berguna untuk memastikan event tidak hilang setelah diterbitkan.
 
 
-![This app use several middlewares.](../images/idempotent_consumer_at_least_once.png)
+![Idempotent Consumer Pattern.](../images/idempotent_consumer_at_least_once.png)
 
 
 
